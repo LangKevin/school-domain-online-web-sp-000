@@ -8,14 +8,15 @@ class School
   end
 
   def add_student(name, vKey)
-    ROSTER.each do |key|
+    @ROSTER.each do |key|
       if key == vKey
-        ROSTER[vKey] << name
+        @ROSTER[vKey] << name
       elsif
-        ROSTER[vKey] = name
+        @ROSTER[vKey] = []
+        @ROSTER[vKey] << name
       end
     end
-    self.ROSTER
+    
   end
 
   def grade(grade)

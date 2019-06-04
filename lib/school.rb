@@ -1,6 +1,6 @@
 # code here!
 class School
-
+  attr_accessor :ROSTER, :schoolName
 
   def initialize(schoolName)
     @schoolName = schoolName

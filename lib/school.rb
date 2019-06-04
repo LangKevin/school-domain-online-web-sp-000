@@ -1,21 +1,21 @@
 # code here!
 class School
-  attr_accessor :ROSTER, :schoolName
+  attr_accessor :roster, :schoolName
 
   def initialize(schoolName)
     @schoolName = schoolName
-    @ROSTER = {}
+    @roster = {}
   end
 
   def add_student(name, vKey)
-    if !@ROSTER[vKey]
-      @ROSTER[vKey] = []
+    if !@roster[vKey]
+      @roster[vKey] = []
     end
-    @ROSTER[vKey] << name
+    @roster[vKey] << name
   end
 
   def grade(grade)
-    @ROSTER[grade]
+    @roster[grade]
   end
 
   def sort

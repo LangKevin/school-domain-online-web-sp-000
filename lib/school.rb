@@ -16,7 +16,7 @@ class School
         @ROSTER[vKey] << name
       end
     end
-    
+
   end
 
   def grade(grade)

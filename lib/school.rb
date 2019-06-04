@@ -1,6 +1,6 @@
 # code here!
 class School
-  roster = {}
+  ROSTER = {}
 
   def initialize(schoolName)
     @schoolName = schoolName
@@ -8,11 +8,11 @@ class School
   end
 
   def add_student(name, vKey)
-    roster.each do |key|
+    ROSTER.each do |key|
       if key == vKey
-        roster[key] << name
+        ROSTER[key] << name
       elsif
-        roster[key] = vKey
+        ROSTER[key] = vKey
       end
     end
   end

@@ -10,9 +10,9 @@ class School
   def add_student(name, vKey)
     ROSTER.each do |key|
       if key == vKey
-        ROSTER[key] << name
+        ROSTER[vKey] << name
       elsif
-        ROSTER[key] = vKey
+        ROSTER[vKey] = name
       end
     end
     ROSTER[vKey]

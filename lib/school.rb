@@ -20,8 +20,9 @@ class School
 
   def sort
     # @roster.sort
-    @roster.each do |student|
-      puts "#{student}"
+    @roster.each do |student, data|
+      # puts "#{data}"
+      data.sort
     end
 
   end

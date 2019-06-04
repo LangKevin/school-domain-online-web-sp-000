@@ -21,7 +21,7 @@ class School
   def sort
     # @roster.sort
     @roster.each do |student|
-      student.sort
+      puts "#{student}"
     end
 
   end

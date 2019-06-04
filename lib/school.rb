@@ -15,11 +15,11 @@ class School
   end
 
   def grade(grade)
-
+    @ROSTER[grade]
   end
 
   def sort
-
+    
   end
 
 end

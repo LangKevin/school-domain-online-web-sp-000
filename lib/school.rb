@@ -11,7 +11,7 @@ class School
     if @ROSTER.length == 0
       @ROSTER[vKey] = []
       @ROSTER[vKey] << name
-    end  
+    end
     @ROSTER.each do |key|
       if key == vKey
         @ROSTER[vKey] << name

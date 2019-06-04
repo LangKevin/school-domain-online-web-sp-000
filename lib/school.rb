@@ -1,12 +1,16 @@
 # code here!
 class School
   attr_accessor :roster, :schoolName
-
+  roster = {}
   def initialize(schoolName)
     @schoolName = schoolName
-    @roster = {}
+    # @roster = {}
   end
 
+  def roster=(roster)
+    @roster = roster
+  end
+  
   def add_student(name, vKey)
     if !@roster[vKey]
       @roster[vKey] = []
@@ -22,7 +26,7 @@ class School
     # @roster.sort
     @roster.each do |student, data|
       data.sort
-      puts "#{data}"
+      # puts "#{data}"
     end
 
   end

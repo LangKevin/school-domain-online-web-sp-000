@@ -22,11 +22,12 @@ class School
   end
 
   def sort
+    retVal = {}
     self.roster.each do |student, data|
-      data.sort
+      retVal[student] = data.sort
       # puts "#{data}"
     end
-
+    retVal
   end
 
 end

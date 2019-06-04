@@ -4,6 +4,7 @@ class School
 
   def initialize(schoolName)
     @schoolName = schoolName
+
   end
 
   def add_student(name, vKey)
@@ -11,7 +12,7 @@ class School
       if key == vKey
         roster[key] << name
       elsif
-        roster[key] = vKey      
+        roster[key] = vKey
       end
     end
   end

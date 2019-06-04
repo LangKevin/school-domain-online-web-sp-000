@@ -8,19 +8,12 @@ class School
   end
 
   def add_student(name, vKey)
-    if @ROSTER.length == 0
-      @ROSTER[vKey] = []
+    if @ROSTER[vKey]
       @ROSTER[vKey] << name
-    elsIf
-      @ROSTER.each do |key|
-        if key == vKey
-          @ROSTER[vKey] << name
-        elsif
-          @ROSTER[vKey] = []
-          @ROSTER[vKey] << name
-        end
-      end
-    end
+    elsif 
+      @ROSTER[vKey] = []
+      @ROSTER[vKey] << name  
+    end  
   end
 
   def grade(grade)

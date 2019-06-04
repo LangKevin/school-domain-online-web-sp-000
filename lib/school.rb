@@ -10,7 +10,7 @@ class School
   def roster=(roster)
     @roster = roster
   end
-  
+
   def add_student(name, vKey)
     if !@roster[vKey]
       @roster[vKey] = []

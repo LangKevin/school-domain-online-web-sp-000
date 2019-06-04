@@ -8,12 +8,10 @@ class School
   end
 
   def add_student(name, vKey)
-    if @ROSTER[vKey]
-      @ROSTER[vKey] << name
-    elsif
+    if !@ROSTER[vKey]
       @ROSTER[vKey] = []
-      @ROSTER[vKey] << name
     end
+    @ROSTER[vKey] << name
   end
 
   def grade(grade)

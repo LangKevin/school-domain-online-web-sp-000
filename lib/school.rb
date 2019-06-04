@@ -4,7 +4,7 @@ class School
   roster = {}
   def initialize(schoolName)
     @schoolName = schoolName
-    # @roster = {}
+    roster = {}
   end
 
   def roster=(roster)
@@ -12,19 +12,18 @@ class School
   end
 
   def add_student(name, vKey)
-    if !@roster[vKey]
-      @roster[vKey] = []
+    if !roster[vKey]
+      roster[vKey] = []
     end
-    @roster[vKey] << name
+    roster[vKey] << name
   end
 
   def grade(grade)
-    @roster[grade]
+    roster[grade]
   end
 
   def sort
-    # @roster.sort
-    @roster.each do |student, data|
+    roster.each do |student, data|
       data.sort
       # puts "#{data}"
     end

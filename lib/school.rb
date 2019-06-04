@@ -1,10 +1,10 @@
 # code here!
 class School
-  ROSTER = {}
+
 
   def initialize(schoolName)
     @schoolName = schoolName
-
+    @ROSTER = {}
   end
 
   def add_student(name, vKey)
@@ -15,7 +15,7 @@ class School
         ROSTER[vKey] = name
       end
     end
-    ROSTER[vKey]
+    self.ROSTER
   end
 
   def grade(grade)

@@ -15,6 +15,7 @@ class School
         ROSTER[key] = vKey
       end
     end
+    ROSTER[key]
   end
 
   def grade(grade)
